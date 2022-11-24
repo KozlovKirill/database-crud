@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -r requirements.txt
+      - name: Docker Compose Build
+        run: |
+          docker-compose build
       - name: Docker Compose Up
         run: |
           docker-compose up

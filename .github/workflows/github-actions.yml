@@ -24,4 +24,7 @@ jobs:
           docker-compose build
       - name: Docker Compose Up
         run: |
-          docker-compose up
+          docker-compose up -d
+      - name: Tests
+        run: |
+          pytest

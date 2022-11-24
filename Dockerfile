@@ -7,3 +7,5 @@ COPY requirements.txt .env /code/
 RUN python -m pip install -r requirements.txt
 
 COPY . ./code
+
+EXPOSE 5432
